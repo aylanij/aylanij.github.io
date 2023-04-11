@@ -267,6 +267,7 @@
             data: form_data,
             success: function(){
                 alert("Form Data Submitted")
+                form.find('input:not([type="submit"]), textarea').val('');
               }
         })
         .fail(fail_func);
